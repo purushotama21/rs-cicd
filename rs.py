@@ -6,6 +6,10 @@ conn = psycopg2.connect(
     port=5439,
     password="Admin123")
 cur = conn.cursor()
+with open('emp.sql') as f:
+    cursor.execute(f.read().decode('utf-8'), multi=True)
+#sqlfile=open("emp.sql","r")
+#cur.execute("sqlfile")
 print("connection succussfully established")
 cur.execute("select * from users")
 print(cur.fetchall())
