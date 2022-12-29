@@ -4,7 +4,7 @@ conn = psycopg2.connect(
     database="dev",
     user="awsuser",
     port=5439,
-    password="Admin123")
+    password="Awsuser123")
 cur = conn.cursor()
 with open('emp.sql') as f:
     cursor.execute(f.read().decode('utf-8'), multi=True)
