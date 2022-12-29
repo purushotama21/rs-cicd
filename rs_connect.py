@@ -11,7 +11,7 @@ with open('emp.sql') as f:
 #sqlfile=open("emp.sql","r")
 #cur.execute("sqlfile")
 print("connection succussfully established")
-cur.execute("select * from users")
+cur.execute("select * from users limit 5")
 print(cur.fetchall())
 print(".........")
 print()
