@@ -5,4 +5,5 @@ CREATE TABLE public.employee(
    ADDRESS        CHAR(50),
    SALARY         REAL
 );
+
 commit;
