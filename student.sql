@@ -1,4 +1,4 @@
-create table students(
+create table public.students(
     id int,
     name varchar(15),
     location varchar(15),
