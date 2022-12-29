@@ -4,10 +4,10 @@ conn = psycopg2.connect(
     database="dev",
     user="awsuser",
     port=5439,
-    password="Awsuser123")
+    password="Awsuser1232")
 cur = conn.cursor()
 with open('emp.sql') as f:
-    cursor.execute(f.read().decode('utf-8'), multi=True)
+    cur.execute(f.read().decode('utf-8'), multi=True)
 #sqlfile=open("emp.sql","r")
 #cur.execute("sqlfile")
 print("connection succussfully established")
