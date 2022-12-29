@@ -6,7 +6,7 @@ conn = psycopg2.connect(
     port=5439,
     password="Awsuser123")
 cur = conn.cursor()
-with open('emp.sql') as f:
+with open('student.sql') as f:
     cur.execute(f.read())
 #sqlfile=open("emp.sql","r")
 #cur.execute("sqlfile")
