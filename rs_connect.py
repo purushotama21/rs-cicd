@@ -7,7 +7,7 @@ conn = psycopg2.connect(
     password="Awsuser123")
 cur = conn.cursor()
 with open('emp.sql') as f:
-    cur.execute(f.read().decode('utf-8'), multi=True)
+    cur.execute(f.read())
 #sqlfile=open("emp.sql","r")
 #cur.execute("sqlfile")
 print("connection succussfully established")
