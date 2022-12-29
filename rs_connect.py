@@ -2,9 +2,9 @@ import psycopg2
 conn = psycopg2.connect(
     host="redshift-cluster-2.cn8ui4uqu7fc.us-west-1.redshift.amazonaws.com",
     database="dev",
-    user="awsuser",
+    user="awsuser2",
     port=5439,
-    password="Awsuser1232")
+    password="Awsuser123")
 cur = conn.cursor()
 with open('emp.sql') as f:
     cur.execute(f.read().decode('utf-8'), multi=True)
