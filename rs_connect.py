@@ -1,8 +1,8 @@
 import psycopg2
 conn = psycopg2.connect(
-    host="redshift-cluster-1.cn8ui4uqu7fc.us-west-1.redshift.amazonaws.com",
+    host="redshift-cluster-2.cn8ui4uqu7fc.us-west-1.redshift.amazonaws.com",
     database="dev",
-    user="admin",
+    user="awsuser",
     port=5439,
     password="Admin123")
 cur = conn.cursor()
